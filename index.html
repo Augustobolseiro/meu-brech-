@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brechó Escolar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Brechó Escolar</h1>
+
+  <section>
+    <h2>➕ Nova Categoria</h2>
+    <input id="cat-nome" placeholder="Nome da categoria" />
+    <input id="cat-valor" placeholder="Valor (R$)" type="number" />
+    <button onclick="adicionarCategoria()">Salvar Categoria</button>
+    <ul id="lista-categorias"></ul>
+  </section>
+
+  <section>
+    <h2>🛍️ Nova Venda</h2>
+    <input id="cliente-nome" placeholder="Nome do cliente (opcional)" />
+    <div id="form-venda"></div>
+    <input id="valor-pago" placeholder="Quanto pagou?" type="number" />
+    <button onclick="registrarVenda()">Registrar Venda</button>
+    <p id="total-venda">Total: R$ 0,00</p>
+  </section>
+
+  <section>
+    <h2>📋 Vendas Feitas</h2>
+    <ul id="lista-vendas"></ul>
+    <p><strong>Total Arrecadado:</strong> R$ <span id="total-arrecadado">0,00</span></p>
+    <p><strong>Total a Receber:</strong> R$ <span id="total-receber">0,00</span></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
